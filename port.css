@@ -1,0 +1,257 @@
+/* Basic Reset and Font Setting */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-color: #1a0033; /* Dark Purple Background */
+    color: white;
+    text-align: center;
+    position: relative; 
+    overflow-x: hidden; 
+}
+
+/* Header Styling */
+.header {
+    padding: 30px 0 10px 0;
+}
+
+.header h1 {
+    /* Poppins Bold (700) font applied */
+    font-family: 'Poppins', sans-serif !important; 
+    font-weight: 700; 
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    /* Gradient text effect */
+    background: linear-gradient(90deg, #b388ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #b388ff;
+    margin: 0;
+    font-weight: 600; 
+}
+
+/* Services Card Container */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.services-card {
+    width: 90%;
+    max-width: 700px; 
+    background: rgba(85, 26, 139, 0.7); 
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+}
+
+.services-card h2 {
+    color: #ffcc00; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    border: 1px solid #ffcc00;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 700; 
+}
+
+/* Wide View Layout (2 columns) */
+.service-list.wide-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+    margin-bottom: 40px;
+    padding: 0 10px; 
+}
+
+.service-item {
+    text-decoration: none; 
+    color: white;
+    font-size: 17px;
+    font-weight: 600; 
+    letter-spacing: 0.5px;
+    padding: 10px 5px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    border-radius: 5px;
+    text-align: left; 
+    padding-left: 20px; 
+    display: block; 
+}
+
+.service-item:hover {
+    background-color: #551a8b; 
+    color: #ffcc00; 
+    transform: scale(1.03); 
+    cursor: pointer; 
+}
+
+/* --------------------------------- */
+/* *** NEW Contact Heading Styling *** */
+/* --------------------------------- */
+.contact-heading {
+    font-size: 18px; /* छोटी फ़ॉन्ट साइज़ */
+    color: #b388ff; /* Secondary Accent Color */
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0; /* ऊपर-नीचे मार्जिन */
+}
+
+/* --------------------------------- */
+/* *** Contact Options Styling *** */
+/* --------------------------------- */
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    margin: 0 0 40px 0; /* मार्जिन को ऊपर से 0 कर दिया क्योंकि हेडिंग मार्जिन संभाल रही है */
+    padding: 0 10px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 5px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn i {
+    margin-right: 5px; 
+    font-size: 16px;
+}
+
+.whatsapp-btn {
+    background-color: #25d366; 
+}
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.instagram-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(220, 40, 67, 0.4);
+}
+
+.email-btn {
+    background-color: #d44638; 
+}
+.email-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(212, 70, 56, 0.4);
+}
+
+/* --------------------------------- */
+/* *** Portfolio Section Styling *** */
+/* --------------------------------- */
+.portfolio-section {
+    padding: 80px 20px;
+    background-color: #2b0059; 
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #ffcc00; 
+    color: #1a0033; 
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+}
+
+.download-btn i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.download-btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* --------------------------------- */
+/* *** Flying Background Elements *** */
+/* --------------------------------- */
+body::before {
+    content: '';
+    position: absolute;
+    top: 5%; left: -10%; width: 350px; height: 350px;
+    background-color: #ffcc00; border-radius: 50%;
+    z-index: -1; opacity: 0.15; filter: blur(120px); 
+    animation: float1 18s ease-in-out infinite; 
+}
+
+body::after {
+    content: '\f144'; font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; position: absolute;
+    bottom: 10%; right: 5%; font-size: 150px; 
+    color: #b388ff; z-index: -1; opacity: 0.08; 
+    filter: blur(5px); animation: float2 15s ease-in-out infinite; 
+}
+
+@keyframes float1 {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, -20px) scale(1.05); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes float2 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(0, 30px) rotate(0deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+/* Mobile Devices ke liye Adjustment (Responsiveness) */
+@media (max-width: 550px) {
+    .service-list.wide-view { grid-template-columns: 1fr; }
+    
+    .contact-heading { font-size: 16px; margin: 0 0 10px 0;}
+    
+    .contact-options {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        padding: 0;
+    }
+    .contact-btn {
+        font-size: 16px;
+        padding: 15px 10px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    /* ... (बाकी मीडिया क्वेरी स्टाइल्स) ... */
+}

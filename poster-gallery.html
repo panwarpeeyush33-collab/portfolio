@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Design Gallery | PEEYUSH EDITZ</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="port.css"> 
+    
+    <style>
+        .gallery-page {
+            background-color: #1a0033; 
+            min-height: 100vh;
+            padding-bottom: 50px;
+        }
+        .gallery-header {
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+        .gallery-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #ffcc00;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Home Button Style */
+        .home-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #551a8b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .home-btn:hover {
+            background-color: #b388ff;
+        }
+    </style>
+</head>
+
+<body class="page-fade-in gallery-page"> 
+    
+    <div class="gallery-header">
+        <h1>POSTER DESIGN WORK</h1>
+        <a href="port.html" class="home-btn">← Back to Services</a>
+    </div>
+
+    <main class="gallery-grid">
+        
+        <div class="gallery-item"><img src="C:\Users\panwa\Downloads\CBI BASANT.jpg" ></div>
+        <div class="gallery-item"><img src="images/poster-2.jpg" ></div>
+        <div class="gallery-item"><img src="images/poster-3.jpg" ></div>
+        <div class="gallery-item"><img src="images/poster-4.jpg" ></div>
+        </main>
+
+</body>
+</html>
